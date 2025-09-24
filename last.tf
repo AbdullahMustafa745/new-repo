@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "web" {
   ami           = "ami-00ca32bbc84273381"
-  instance_type = "t2.micro"
+  instance_type = "t2.small"
 
   tags = {
     Name = "sential_check"
